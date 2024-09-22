@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../assets/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Rubik Mono One';
+    src: url('../../assets/Rubik_Mono_One/RubikMonoOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nunito';
+    src: url('../../assets/Nunito/Nunito-ExtraLight.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+
+input{
+    margin: 20px;
+    color: #bbb4b4;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom:1px solid #D9D3D3;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+input:focus {
+    outline: none; /* Quita el contorno predeterminado del navegador */
+}
+  
+
+button{
+    margin-top: 70px;
+    width: 100%;
+    height: 70px;
+    background-color: #18218F;
+    font-size: 2.5rem;
+    border-radius: 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 800;
+}
+
+p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    
+    a{
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+

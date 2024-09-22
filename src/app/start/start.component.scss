@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../assets/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Rubik Mono One';
+    src: url('../../assets/Rubik_Mono_One/RubikMonoOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nunito';
+    src: url('../../assets/Nunito/Nunito-ExtraLight.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ .container{
+    background-color: #fff;
+    background-image: url('../../assets/Fondo.jpg'); /* Ruta relativa a la carpeta de assets */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* O el tamaño que necesites */
+    width: 100%; /* Asegúrate de que cubra todo el ancho */
+ } 
+
+ .container::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 33, 143, 0.23); /* Color con opacidad del 70% */
+  }
+
+
+.ionic-content{
+    margin: 0 15px 100px 15px;
+    background-color: #fff;
+    border-radius: 40px;
+   z-index: 1;
+
+}
+
+.logotipo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 150px;
+    margin: auto 0;
+}
+
+.segment-button{
+    
+    background-color: #D9D3D3;
+    height: 50px;
+     color: white;
+    font-weight: 800;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.4rem;
+  
+}
+
+.segment{
+  background-color: white; /* Fondo cuando está seleccionado */
+  
+}
+
+
+.der{
+    margin-right: 5px;
+    border-radius: 0px 40px 40px 0px;
+}
+
+
+
+.izq{
+  border-radius: 40px 0px 0px 40px;
+    margin-left: 5px;
+   
+}
+
+.title{
+    margin-top: 30px;
+    font-size: 4.3rem;
+    text-align: center;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+  }
+
+  .sub-title{
+    font-weight:600;
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  ion-segment-button {
+    --indicator-color: #18218F;
+    --color:#000;
+    --border-radius: 40px;
+  }
+  
+ 

@@ -1,0 +1,36 @@
+
+<div class="container">
+
+  <div class="flex-item">
+    <h1 class="title">MOVE SMART</h1>
+  </div>
+  
+  <div class="ionic-content" >
+    <div class="logotipo">
+      <img src="../../assets/Logotipo.jfif" alt="">
+    </div>
+    <ion-segment [(ngModel)]="selectedForm" class="segment">
+      <ion-segment-button value="login" class="segment-button izq">
+        ACCEDER
+      </ion-segment-button>
+      <ion-segment-button value="register"  class="segment-button der">
+        REGISTRARSE
+      </ion-segment-button>
+    </ion-segment>
+    <h2 class="sub-title">Bienvenido a MoveSmart</h2>
+  
+    <div [ngSwitch]="selectedForm">
+      <app-login *ngSwitchCase="'login'"></app-login>
+      <app-register *ngSwitchCase="'register'"></app-register>
+    </div>
+    
+  </div>
+
+  
+
+
+</div>
+
+
+
+
