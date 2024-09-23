@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { StartComponent } from './start/start.component';
 import { IonTabsComponent } from './ion-tabs/ion-tabs.component';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { MenuNavComponent } from './menu-nav/menu-nav.component';
   
      
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

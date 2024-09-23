@@ -19,44 +19,21 @@
 
 <ion-grid>
   <ion-row>
-    <ion-col>
-      <ion-card-title>RUTA 1 N</ion-card-title>
-      <img alt="ruta" src="../../assets/camion.jpg" />
-    
+    <ion-col *ngFor="let rutaApi of rutas">
       <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Paradas cercanas</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          Consultar horario
-        </ion-card-content>
-      
-      </ion-card>
-    </ion-col>
-    <ion-col>
-   
-        <ion-card-title>RUTA N 2</ion-card-title>
+        <ion-card-title>{{ rutaApi.nombre_ruta }}</ion-card-title>
         <img alt="ruta" src="../../assets/camion.jpg" />
-  
-    
-     
-      <ion-card>
-       
-        
         <ion-card-header>
           <ion-card-subtitle>Paradas cercanas</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
           Consultar horario
         </ion-card-content>
-      
       </ion-card>
     </ion-col>
-   
   </ion-row>
-
-  
 </ion-grid>
+
 <ion-button>
   Ver todas las rutas
   <ion-icon name="arrow-up-outline" class="icon"></ion-icon>
